@@ -1,0 +1,12 @@
+Appium-Python-Client
+comtypes
+pyparsing
+pyserial
+python-dateutil
+robotframework
+robotframework-appiumlibrary
+selenium
+opencv-python
+matplotlib
+numpy
+xmltodict

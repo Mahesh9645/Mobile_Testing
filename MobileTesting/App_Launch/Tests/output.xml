@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.10.9 on win32)" generated="20231220 18:43:16.524" rpa="false" schemaversion="3">
+<suite id="s1" name="AppTests" source="D:\New folder\MobileTesting\App_Launch\Tests\AppTests.robot">
+<test id="s1-t1" name="Check WIFI Network connected or Not" line="8">
+<kw name="Launch Settings app" library="General">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${remote_URL}</arg>
+<arg>platformName=${platform_Name}</arg>
+<arg>deviceName=${device_Name}</arg>
+<arg>appPackage=${settings_App_Package}</arg>
+<arg>appActivity=${settings_App_Activity}</arg>
+<arg>automationName=${automation_Name}</arg>
+<arg>adbExecTimeout=360000</arg>
+<arg>newCommandTimeout=360000</arg>
+<arg>uiautomator2ServerLaunchTimeout=360000</arg>
+<arg>launchTimeout=360000</arg>
+<arg>uiautomator2ServerInstallTimeout=360000</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20231220 18:44:10.425" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20231220 18:44:10.424" endtime="20231220 18:44:10.452"/>
+</kw>
+<msg timestamp="20231220 18:44:10.454" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20231220 18:44:10.456" level="FAIL">ProtocolError: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))</msg>
+<status status="FAIL" starttime="20231220 18:43:16.699" endtime="20231220 18:44:10.457"/>
+</kw>
+<status status="FAIL" starttime="20231220 18:43:16.698" endtime="20231220 18:44:10.457"/>
+</kw>
+<status status="FAIL" starttime="20231220 18:43:16.698" endtime="20231220 18:44:10.462">ProtocolError: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))</status>
+</test>
+<status status="FAIL" starttime="20231220 18:43:16.525" endtime="20231220 18:44:10.464"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="AppTests">AppTests</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20231220 18:44:10.454" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+</errors>
+</robot>
